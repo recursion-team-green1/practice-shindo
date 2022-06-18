@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>finder battery program</title>
+</head>
+<body>
+    <nav class="nav justify-content-center text-light bg-primary">
+        <h1 class="fs3rem fw-bold font-monospace py-4">Battery Finder Program</h1>
+    </nav>
+    <div class="container">
+        <form>
+            <div class="my-3">
+                <label class="form-label">Step1: Select your brand</label>
+                <select class="form-select" type="" name="brand" id="select-brand">
+                </select>
+            </div>
+            <div class="my-3">
+                <label class="form-label">Step2: Select your model</label>
+                <select class="form-select" type="" name="model" id="select-model">
+                </select>
+            </div>
+            <div class="my-3">
+                <p class="form-label">Step3: Input accessory power consumption</p>
+                <input class="form-control" type="number" value="55" name="power" id="input-power" min="0" max="100">
+            </div>
+        </form>
+        <div class="my-3">
+            <p class="fs-2">Step4: Choose your battery</p>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">型番</th>
+                        <th scope="col">持続時間</th>
+                    </tr>
+                </thead>
+                <tbody id="result-table">
+                    <tr>
+                        <td>test</td>
+                        <td>test</td>
+                    </tr>
+                    <tr>
+                        <td>test</td>
+                        <td>test</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
